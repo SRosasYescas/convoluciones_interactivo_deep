@@ -90,7 +90,9 @@ def get_predefined_kernels():
         "Laplaciano": np.array([[0, -1, 0], [-1, 4, -1], [0, -1, 0]]),
         "Enfoque": np.array([[0, -1, 0], [-1, 5, -1], [0, -1, 0]]),
         "Relieve": np.array([[-2, -1, 0], [-1, 1, 1], [0, 1, 2]]),
-        "Desenfoque Gaussiano": np.array([[1, 2, 1], [2, 4, 2], [1, 2, 1]]) / 16
+        "Desenfoque Gaussiano": np.array([[1, 2, 1], [2, 4, 2], [1, 2, 1]]) / 16,
+        "Kernel 1": np.array([[2, 2, -1], [1, -2, 0], [1, 1, 0]]),
+        "Kernel 2 ": np.array([[-1, -1, 1], [-1, 5, 1], [1, 0, -1]])
     }
     return kernels
 
@@ -285,3 +287,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
